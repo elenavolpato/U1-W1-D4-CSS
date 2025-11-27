@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <header class="box-shadow">
+    <header class="box-shadow spacing">
       <img src="assets/img/logo.svg" width="150" />
       <h4 class="subtitle">Epicode - il blog dei developers</h4>
       <nav>
@@ -38,9 +38,9 @@
       </nav>
     </header>
 
-    <main class="box-shadow">
+    <main class="box-shadow spacing">
       <h1>Come creare un template per i post</h1>
-      <h5 class="author"><i class="fa-solid fa-square-pen"></i>di Mario Rossi - <i class="fa-solid fa-clock"></i>pubblicato il 25-10-2020</h5>
+      <p class="author"><i class="fa-solid fa-square-pen"></i>di Mario Rossi - <i class="fa-solid fa-clock"></i>pubblicato il 25-10-2020</p>
       <div>
         <p>
           La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <span class="emphasis-text"> parti comuni </span> da applicare a
@@ -53,7 +53,7 @@
           <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="code">&lt;footer&gt;</span></li>
         </ul>
 
-        <h5>Formattazione del codice</h5>
+        <p>Formattazione del codice</p>
         <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
         <ol>
           <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
@@ -100,13 +100,11 @@
         </tbody>
       </table>
       <p>
-        Un test di validazione potrà essere fatto tramite <a href="https://epicode.com/it/">il tool online</a> dedicato allo scopo. Una volta ottimizzato il
-        tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+        Un test di validazione potrà essere fatto tramite <span class="emphasis-text">il tool online</span> dedicato allo scopo. Una volta ottimizzato il tutto,
+        avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
       </p>
       <div>
         <iframe
-          width="385"
-          height="230"
           src="https://www.youtube.com/embed/sOnsyLAXfSI"
           title="Come funziona EPICODE? 💜"
           frameborder="0"
@@ -123,34 +121,36 @@
           <button type="submit">Iscriviti!</button>
         </form>
       </section>
+
       <div>
-        <h2>Articoli correlati</h2>
-        <div>
+        <h2 class="related-article-title">Articoli correlati</h2>
+        <div class="related-article">
           <a href="post2.html" title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice HTML</a>
-          <p>Categoria: develop</p>
-          <p>Data: 18-9-2020</p>
+          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="data"><i class="fa-solid fa-calendar-days"></i>Data: 18-9-2020</p>
         </div>
 
-        <div>
+        <div class="related-article">
           <a href="post3.html" title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la sintassi</a>
-          <p>Categoria: develop</p>
-          <p>Data: 16-9-2020</p>
+          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="data"><i class="fa-solid fa-calendar-days"></i>Data: 16-9-2020</p>
         </div>
 
-        <div>
+        <div class="related-article">
           <a href="post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella pagina</a>
-          <p>Categoria: ottimizzazione</p>
-          <p>Data: 30-9-2020</p>
+          <p><i class="fa-solid fa-tag"></i>Categoria: ottimizzazione</p>
+          <p class="data"><i class="fa-solid fa-calendar-days"></i>Data: 30-9-2020</p>
         </div>
       </div>
       <br />
       <br />
     </main>
     <footer>
-      <strong>Blog Epicode ©2023 </strong><br />
-      Testata online di Mario Rossi, registrata con prot. <br />
-      2018 - via Luigi Einaudi 2  Milano. <br />P.IVA 00112233.
-      <a href="mailto:info@epicode.school">info@epicode.school</a>
+      <p>Blog Epicode ©2023</p>
+      <p>
+        Testata online di Mario Rossi, registrata con prot. 2018 - via Luigi Einaudi 2 - Milano. <br />P.IVA 00112233.
+        <a href="mailto:info@epicode.school">info@epicode.school</a>
+      </p>
     </footer>
   </body>
 </html>

@@ -1,9 +1,8 @@
 body {
   margin: 0;
   background-image: url("assets/img/sfondo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 30%;
+  background-repeat: repeat;
+  background-position: right;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,24 +15,32 @@ h6,
 p {
   margin-top: 0;
 }
-p {
-  font-size: 18px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+p,
+ul li,
+ol li,
+a {
+  font-size: 20px;
 }
 
 header {
   padding: 32px 16px;
   text-align: center;
   background: #046c88;
-  background: linear-gradient(90deg, rgba(4, 108, 136, 1) 0%, rgba(0, 157, 194, 1) 100%);
-  margin: 16px;
+  background: linear-gradient(180deg, rgba(4, 108, 136, 1) 0%, rgba(0, 157, 194, 1) 100%);
   color: white;
   font-weight: 600;
+  font-size: 22px;
 }
 
-h1 {
-  font-weight: 500;
-  line-height: 2rem;
-}
 header img {
   width: 200px;
   margin-bottom: 16px;
@@ -48,10 +55,19 @@ header li a {
   color: white;
 }
 
+a {
+  font-weight: 600;
+}
+
+.spacing {
+  padding: 16px;
+  margin: 16px;
+}
+
 main {
   background-color: white;
   margin: 16px;
-  padding: 16px;
+  padding: 18px;
   color: #010001;
 }
 main h1 {
@@ -62,8 +78,7 @@ main h1 {
 }
 
 .author {
-  color: #c3c3c3;
-  font-size: 0.75rem;
+  color: #9fa09e;
 }
 
 .box-shadow {
@@ -84,7 +99,7 @@ table {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: none;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   margin-inline: auto;
 }
 table th {
@@ -108,32 +123,29 @@ tbody tr:last-child {
   border-bottom: solid 2px #3666c8;
 }
 
-.table-title {
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-iframe {
-  border-radius: 25px;
-  margin-bottom: 16px;
-}
-
-.newsletter {
-  background-color: lightgray;
+footer {
+  margin: 16px;
   padding: 16px;
-}
-
-.newsletter h2 {
+  padding-bottom: 24px;
+  color: white;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
+  background: #005565;
+  background: linear-gradient(180deg, rgba(0, 85, 101, 1) 0%, rgba(48, 59, 55, 1) 80%);
+}
+footer p {
+  font-size: 18px;
 }
 
+footer a {
+  color: #ee06fb;
+}
 form {
   width: 100%;
   max-width: 380px;
   padding-bottom: 16px;
+  display: flex;
+  width: 100%;
+  gap: 8px;
 }
 
 input {
@@ -151,4 +163,47 @@ button {
   padding-inline: 8px;
   font-weight: 600;
   font-size: 20px;
+}
+
+.table-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+iframe {
+  border-radius: 25px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+}
+
+.newsletter {
+  background-color: #e1e0e1;
+  padding: 16px;
+}
+
+.newsletter h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.related-article {
+  padding: 16px 16px 8px 16px;
+  background-color: #e1e0e1;
+  border: solid 2px #d1d4d4;
+  margin-bottom: 1rem;
+}
+
+.related-article-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 24px;
+}
+.related-article a {
+  color: #109dc3;
+}
+.data {
+  text-align: right;
+  font-size: 18px;
 }
