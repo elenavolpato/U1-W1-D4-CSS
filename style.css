@@ -16,6 +16,9 @@ h6,
 p {
   margin-top: 0;
 }
+p {
+  font-size: 18px;
+}
 
 header {
   padding: 32px 16px;
@@ -25,6 +28,11 @@ header {
   margin: 16px;
   color: white;
   font-weight: 600;
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 2rem;
 }
 header img {
   width: 200px;
@@ -46,13 +54,101 @@ main {
   padding: 16px;
   color: #010001;
 }
+main h1 {
+  padding-top: 16px;
+}
 .subtitle {
   text-transform: uppercase;
 }
 
 .author {
   color: #c3c3c3;
+  font-size: 0.75rem;
 }
+
 .box-shadow {
   box-shadow: 3px 3px 5px gray;
+}
+
+.code {
+  background: #ddddde;
+  border: gray 1.5px solid;
+  border-radius: 4px;
+  padding-inline: 4px;
+}
+.emphasis-text {
+  color: purple;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-inline: auto;
+}
+table th {
+  background-color: #3666c8;
+  color: white;
+  width: 130px;
+}
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  line-height: 3rem;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:last-child {
+  border-bottom: solid 2px #3666c8;
+}
+
+.table-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+iframe {
+  border-radius: 25px;
+  margin-bottom: 16px;
+}
+
+.newsletter {
+  background-color: lightgray;
+  padding: 16px;
+}
+
+.newsletter h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+form {
+  width: 100%;
+  max-width: 380px;
+  padding-bottom: 16px;
+}
+
+input {
+  line-height: 2rem;
+  border: none;
+  border-bottom: 1px dashed;
+  width: 80%;
+}
+
+button {
+  height: 2.15rem;
+  background-color: #3666c8;
+  border: none;
+  color: white;
+  padding-inline: 8px;
+  font-weight: 600;
+  font-size: 20px;
 }
